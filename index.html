@@ -146,7 +146,7 @@
             </br>
             xxx
           </h5>
-          <a onclick="playMsc();"><div data-video="bPyzIqh2LKk" data-autoplay="0" data-loop="1" id="youtube-audio1"></div></a>
+          <div data-video="5pZQp22OxvU" data-autoplay="0" data-loop="1" id="youtube-audio1"></div>
         </div>
         <!-- Start Countdown -->
         <div>
@@ -538,6 +538,10 @@
       });
     });
 
+    $(window).on("load",function(){
+      playAudio1();
+    });
+
     // 2. This code loads the IFrame Player API code asynchronously.
     var tag = document.createElement('script');
 
@@ -603,10 +607,6 @@
       if (event.data === 0) {
         togglePlayButton1(false);
       }
-    }
-
-    function playMsc() {
-      playAudio1();
     }
 
     AOS.init({
