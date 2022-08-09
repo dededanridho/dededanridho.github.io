@@ -15,11 +15,16 @@
   <meta property="og:url" content="">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Bulma Version 0.8.x-->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
   <link rel="stylesheet" type="text/css" href="css/menikah.css" />
   <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
   <style>
+    .notie-container {
+      box-shadow: none;
+    }
+
     .sticky {
       position: fixed;
       top: 0;
@@ -516,6 +521,7 @@
   <!-- End Footer -->
 
   <!-- Scripts -->
+  <script src="https://unpkg.com/notie"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menikah.js"></script>
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -524,7 +530,6 @@
     $(document).ready(function () {
       $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
-          playAudio1();
           $('#toTop').fadeIn();
         } else {
           $('#toTop').fadeOut();
@@ -539,6 +544,7 @@
     });
 
     $(window).on("load",function(){
+      confirm();
       playAudio1();
     });
 
@@ -607,6 +613,18 @@
       if (event.data === 0) {
         togglePlayButton1(false);
       }
+    }
+
+    function confirm() {
+      notie.force({
+          type: 1,
+          text: 'Dede & Ridho',
+          buttonText: 'Buka Undangan',
+          callback: function () {
+            playAudio1();
+            notie.alert({ type: 1, text: 'Datang ya, terima kasih :)' })
+          }
+        })
     }
 
     AOS.init({
