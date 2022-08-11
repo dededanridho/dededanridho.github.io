@@ -544,6 +544,13 @@
     });
 
     $(window).on("load",function(){
+      notie.setOptions({
+        overlayOpacity: 50,
+        transitionCurve: 'ease',
+        positions: {
+          force: 'bottom'
+        }
+      });
       confirm();
       playAudio1();
     });
