@@ -15,7 +15,7 @@
   <meta property="og:url" content="">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Bulma Version 0.8.x-->
-  <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
+  <link rel="stylesheet" type="text/css" href="css/notie.min.css">
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
   <link rel="stylesheet" type="text/css" href="css/menikah.css" />
@@ -521,7 +521,7 @@
   <!-- End Footer -->
 
   <!-- Scripts -->
-  <script src="https://unpkg.com/notie"></script>
+  <script src="js/notie.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menikah.js"></script>
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -546,10 +546,7 @@
     $(window).on("load",function(){
       notie.setOptions({
         overlayOpacity: 50,
-        transitionCurve: 'ease',
-        positions: {
-          force: 'bottom'
-        }
+        transitionCurve: 'ease'
       });
       confirm();
       playAudio1();
@@ -623,7 +620,7 @@
           buttonText: 'Buka Undangan',
           callback: function () {
             playAudio1();
-            notie.alert({ type: 1, text: 'Datang ya, terima kasih :)' })
+            // notie.alert({ type: 1, text: 'Datang ya, terima kasih :)' })
           }
         })
     }
