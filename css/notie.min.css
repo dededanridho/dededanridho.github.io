@@ -61,7 +61,10 @@
     font-family: 'Rouge Script', sans-serif;
     color: #fff;
     padding: 220px;
-    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png') no-repeat center;
+    height: 100%;
+    width: 100%;
+    /* background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png') no-repeat center; */
+    background: url('../image/ourphoto-rev.jpg') no-repeat center;
 }
 
 .notie-textbox-inner {
