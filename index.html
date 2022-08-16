@@ -544,6 +544,12 @@
     });
 
     $(window).on("load",function(){
+      const params = new URLSearchParams(location.search);
+      const name = params.get("name");
+      if (name != 'contoh') {
+        window.location.href = 'https://i.stack.imgur.com/6M513.png';
+      } else {console.log(name);}
+
       notie.setOptions({
         overlayOpacity: 50,
         transitionCurve: 'ease'
