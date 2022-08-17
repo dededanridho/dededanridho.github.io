@@ -551,11 +551,13 @@
           if (name == array[i]) {
             console.log(array[i]);
           } else if (name == null) {
-            console.log('null');
+            console.log('null name');
           }
 
           if (!array.includes(name)) {
-            window.location.href = 'https://i.stack.imgur.com/6M513.png';
+            if (name == null) {
+              console.log('this name not available');
+            } else {window.location.href = 'https://i.stack.imgur.com/6M513.png';}
           }
       }
 
