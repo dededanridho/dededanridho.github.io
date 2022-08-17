@@ -545,12 +545,19 @@
 
     $(window).on("load",function(){
       const params = new URLSearchParams(location.search);
-      const name = params.get("name");
-      if (name == 'contoh') {
-        console.log(name);
-      } else if (name == null) {
-        console.log(name);
-      } else {window.location.href = 'https://i.stack.imgur.com/6M513.png';}
+      const name = params.get("u");
+      var array = ['Hello', 'World'];
+      for (var i in array) {
+          if (name == array[i]) {
+            console.log(array[i]);
+          } else if (name == null) {
+            console.log('null');
+          }
+
+          if (!array.includes(name)) {
+            window.location.href = 'https://i.stack.imgur.com/6M513.png';
+          }
+      }
 
       notie.setOptions({
         overlayOpacity: 50,
