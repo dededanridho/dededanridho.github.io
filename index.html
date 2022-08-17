@@ -546,6 +546,8 @@
     $(window).on("load",function(){
       const params = new URLSearchParams(location.search);
       const name = params.get("u");
+      if (!params.get("u")) {window.location.href = 'https://i.stack.imgur.com/6M513.png';}
+
       var array = ['Hello', 'World'];
       for (var i in array) {
           if (name == array[i]) {
