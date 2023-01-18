@@ -142,6 +142,9 @@
       <!-- Begin Hero Content-->
       <div class="hero-body">
         <div class="container has-text-centered">
+          <h2 class="subtitle" id="h2-undangan">
+            <span id="tamu-undangan"></span>
+          </h2>
           <h1 class="subtitle">Undangan Pernikahan</h1>
           <h1 class="title">Dede & Ridho</h1>
           <h5 class="subtitle tempatwaktu">
@@ -584,23 +587,29 @@
         console.log('params get u');
       } else if (params == '') {
         console.log('params null');
-        alert('Maaf, kamu tidak masuk di list tamu undangan kami');
-        window.location.href = 'js/404.html';
+        // alert('Maaf, kamu tidak masuk di list tamu undangan kami');
+        // window.location.href = 'js/404.html';
+        $("#h2-undangan").attr('style','display: none;');
       } else {
         window.location.href = 'js/404.html';
       }
 
-      var array = ['Hello', 'World'];
+      var array = ['Wahyu','Gilang','Fischel','Raki','Abdu','Sendi','Ipin','Yahya','Adhi','Yogi',
+                    'Eko'
+                  ];
       for (var i in array) {
           if (name == array[i]) {
-            console.log(array[i]);
+            // console.log(array[i]);
+            $("#tamu-undangan").text(array[i]+' & Partner');
           } else if (name == null) {
             console.log('null name');
+            window.location.href = 'js/404.html';
           }
 
           if (!array.includes(name)) {
             if (name == null) {
               console.log('this name not available');
+              window.location.href = 'js/404.html';
             } else {window.location.href = 'js/404.html';}
           }
       }
