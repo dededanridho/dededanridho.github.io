@@ -603,13 +603,11 @@
             $("#tamu-undangan").text(array[i]+' & Partner');
           } else if (name == null) {
             console.log('null name');
-            window.location.href = 'js/404.html';
           }
 
           if (!array.includes(name)) {
             if (name == null) {
               console.log('this name not available');
-              window.location.href = 'js/404.html';
             } else {window.location.href = 'js/404.html';}
           }
       }
