@@ -156,41 +156,47 @@
         <!-- Start Countdown -->
         <div>
           <ul id="hitungmundur">
-            <li><span class="days">00</span>
+            <li><span class="days" id="days">00</span>
               <p class="days_text">Hari</p>
             </li>
             <li class="separator">:</li>
-            <li><span class="hours">00</span>
+            <li><span class="hours" id="hours">00</span>
               <p class="hours_text">Jam</p>
             </li>
             <li class="separator">:</li>
-            <li><span class="minutes">00</span>
+            <li><span class="minutes" id="minutes">00</span>
               <p class="minutes_text">Menit</p>
             </li>
             <li class="separator">:</li>
-            <li><span class="seconds">00</span>
+            <li><span class="seconds" id="seconds">00</span>
               <p class="seconds_text">Detik</p>
             </li>
           </ul>
           <div class="spasi">
           </div>
           <script type="text/javascript">
-            var now = new Date();
-            var day = now.getDate();
-            var month = now.getMonth() + 1;
-            var year = now.getFullYear() + 1;
+            var countDownDate = new Date("june 07, 2023 09:00:20").getTime();
+            var x = setInterval(function() {
+              var now = new Date().getTime();                
+              var distance = countDownDate - now;                
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              document.getElementById("days").innerHTML = days;
+              document.getElementById("hours").innerHTML = hours;
+              document.getElementById("minutes").innerHTML = minutes;
+              document.getElementById("seconds").innerHTML = seconds;           
 
-            var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-            var harih = '03/21/2020 17:00:00';
-
-            $('#hitungmundur').countdown({
-              date: harih, // TODO Date format: 07/27/2017 17:00:00
-              offset: +7, // TODO Your Timezone Offset
-              day: 'Hari',
-              days: 'Hari'
-            }, function () {
-              console.log('ok');
-            });
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerHTML = '-';
+                document.getElementById("hours").innerHTML = '-';
+                document.getElementById("minutes").innerHTML = '-';
+                document.getElementById("seconds").innerHTML = '-';   
+              }
+            }, 1000);
           </script>
         </div>
         <!-- End Countdown -->
