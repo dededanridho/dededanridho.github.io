@@ -585,8 +585,9 @@
       } else if (params == '') {
         console.log('params null');
         alert('Maaf, kamu tidak masuk di list tamu undangan kami');
+        window.location.href = 'js/404.html';
       } else {
-        window.location.href = 'https://i.stack.imgur.com/6M513.png';
+        window.location.href = 'js/404.html';
       }
 
       var array = ['Hello', 'World'];
@@ -600,7 +601,7 @@
           if (!array.includes(name)) {
             if (name == null) {
               console.log('this name not available');
-            } else {window.location.href = 'https://i.stack.imgur.com/6M513.png';}
+            } else {window.location.href = 'js/404.html';}
           }
       }
 
