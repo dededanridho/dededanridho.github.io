@@ -309,7 +309,7 @@ html {
 .kirim-kado {
   font-family: 'Rouge Script', sans-serif;
   color: #fa0ade;
-  font-size: 3.5rem;
+  font-size: 4.2rem;
   letter-spacing: 0px;
   padding-bottom: 6px;
   line-height: 3.7rem;
@@ -634,6 +634,14 @@ body.preloader-site {
 
 
 .title-foto {
+  font-size: 18pt;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-align: left;
+  color: white;
+}
+
+.kado-nikah {
   font-size: 18pt;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
