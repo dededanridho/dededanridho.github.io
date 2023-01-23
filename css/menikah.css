@@ -398,6 +398,12 @@ vertical-align: middle;
   vertical-align: middle;
 }
 
+.qrcode {
+  display: inline-block;
+  max-height: 550px;
+  vertical-align: middle;
+}
+
 .bismillah {
   margin: 25px;
   display: inline-block;
