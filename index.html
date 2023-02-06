@@ -127,7 +127,7 @@
             </div>
             <div class="navbar-item">
               <a class="navbar-item" href="#tentang-dede-ridho">
-                Tentang Dede & Ridho
+                Galeri Dede & Ridho
               </a>
             </div>
             <div class="navbar-item">
@@ -220,7 +220,7 @@
                   <a href="#lokasi">Lokasi</a>
                 </li>
                 <li>
-                  <a href="#tentang-dede-ridho">Tentang Dede & Ridho</a>
+                  <a href="#tentang-dede-ridho">Galeri Dede & Ridho</a>
                 </li>
 
                 <li>
@@ -381,7 +381,7 @@
       <div class="container">
         <div class="columns is-multiline">
           <div class="column has-text-centered is-12 prolog">
-            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Tentang Dede
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Galeri Dede
               dan Ridho</h1>
 
             <!-- IMAGES -->
@@ -477,17 +477,22 @@
               memberikan doa restu.
               <br>
               <br>
-              Jika bisa hadir kami tunggu konfirmasinya,
+              <!-- x -->
+              Dengan tidak mengurangi rasa hormat
               <br>
-              Informasi: Di meja penerima tamu akan kami sediakan hand sanitizer
+              dimohon untuk mematuhi protokol kesehatan.
               <br>
-              <br>
-              Jika tidak memungkinkan untuk hadir di pernikahan kami, tidak mengapa,
-              <br>
-              semoga bisa berjumpa di lain kesempatan
-              <br>
-              <br>
-              Stay safe & jaga kesehatan ya :)
+              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
+                <a class="instagram" href="#" alt="">
+                  <img src="image/medical-mask.png" style="width: 36px; height: 36px;" alt="">
+                </a>
+                <a class="instagram" href="#" alt="">
+                  <img src="image/wash-your-hands.png" style="width: 36px; height: 36px;" alt="">
+                </a>
+                <a class="instagram" href="#" target="_blank" alt="">
+                  <img src="image/social-distancing.png" style="width: 36px; height: 36px;" alt="">
+                </a>
+              </p>
             </p>
             <a href="https://api.whatsapp.com/send?phone=6282112837503&text=Halo%20Dede,%20aku%20akan%20datang%20di%20acara%20pernikahan%20kamu%20dengan%20Ridho%20:)&source=&data="
               class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
@@ -519,7 +524,7 @@
             <div class="space40px"></div>
             <p class="h2 subtitle">
               Untuk mengirimkan kado nikah kepada kami, silakan kirimkan melalui <strong>Dana</strong>.<br>
-              Atau melalui Nomor Rekening <strong>Bank Mandiri 1290012371965</strong>
+              Atau melalui Nomor Rekening Bank Mandiri <strong id="rek1" onclick="rek1();">1290012371965</strong> atau <strong id="rek2" onclick="rek2();">1180084894798</strong>
             </p>
 
             <div class="space40px"></div>
@@ -648,6 +653,26 @@
           'onStateChange': onPlayerStateChange1
         }
       });
+    }
+
+    let text1 = document.getElementById('rek1').innerHTML;
+    const rek1 = async () => {
+      try {
+        await navigator.clipboard.writeText(text1);
+        alert(text1+' berhasil disalin');
+      } catch (err) {
+        alert('Failed to copy: ', err);
+      }
+    }
+
+    let text2 = document.getElementById('rek2').innerHTML;
+    const rek2 = async () => {
+      try {
+        await navigator.clipboard.writeText(text2);
+        alert(text2+' berhasil disalin');
+      } catch (err) {
+        alert('Failed to copy: ', err);
+      }
     }
 
     function togglePlayButton1(play) {
