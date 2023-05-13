@@ -39,7 +39,7 @@ html {
 
 .hero {
   background-image: url(https://picsum.photos/id/25/1920/1080);
-  background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("https://picsum.photos/id/381/1920/1080") no-repeat;
+  background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/IMG_20230201_164339_1.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -582,53 +582,78 @@ body.preloader-site {
 
 
 .foto1 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/example.jpg");
+  background-image: url("../image/IMG_0170.jpg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
-  min-height: 24rem;
+  min-height: 30rem;
 }
 
 
 .foto2 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/example.jpg");
+  /* linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)),  */
+  background-image: url("../image/IMG_0162.jpg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
-  min-height: 24rem;
+  min-height: 30rem;
 }
 
 .foto3 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/example.jpg");
+  background-image: url("../image/IMG_0143.jpg");
   background-size: cover;
   background-position: top;
   background-repeat:no-repeat;
-  min-height: 24rem;
+  min-height: 30rem;
 }
 
 .foto4 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-lamaran.jpg");
+  background-image: url("../image/IMG_0165.jpg");
   background-size: cover;
   background-position: top;
   background-repeat:no-repeat;
-  min-height: 24rem;
+  min-height: 30rem;
 }
 
 .foto5 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-red-car.jpg");
+  background-image: url("../image/5B247BFD-2430-436F-A265-5A2A517F750B.JPG");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
-  min-height: 24rem;
+  min-height: 30rem;
 }
 
 
 .foto6 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/example.jpg");
+  background-image: url("../image/IMG_0144.jpg");
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
-  min-height: 24rem;
+  min-height: 35rem;
+}
+
+.foto7 {
+  background-image: url("../image/B847D6C3-645B-4C55-B441-5042B4CE2872.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  min-height: 30rem;
+}
+
+.foto8 {
+  background-image: url("../image/c69ba49d-1054-4c62-acaf-3fb338d17df1.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  min-height: 30rem;
+}
+
+.foto9 {
+  background-image: url("../image/86c51b4e-1ea0-4d08-a54f-e9f46d64fd46.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  min-height: 30rem;
 }
 
 
