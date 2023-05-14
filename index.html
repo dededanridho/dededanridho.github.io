@@ -101,140 +101,138 @@
   <!-- Begin Header -->
   <div class="header-wrapper" id="home">
     <!-- Begin Hero -->
-    <div id="mobile-nav">
-      <section class="hero">
-        <!-- Begin Mobile Nav -->
-        <nav class="navbar is-transparent is-hidden-desktop sticky">
-          <!-- Begin Burger Menu -->
-          <div class="navbar-brand is-fixed-top">
-            <div class="navbar-burger burger" data-target="mobile-nav">
-              <span></span>
-              <span></span>
-              <span></span>
+    <section class="hero">
+      <!-- Begin Mobile Nav -->
+      <nav class="navbar is-transparent is-hidden-desktop sticky">
+        <!-- Begin Burger Menu -->
+        <div class="navbar-brand is-fixed-top">
+          <div class="navbar-burger burger" data-target="mobile-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <!-- End Burger Menu -->
+        <div id="mobile-nav" class="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a class="navbar-item" href="#Waktu">
+                Waktu
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#lokasi">
+                Lokasi
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#tentang-dede-ridho">
+                Tentang Ridho & Dede
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#rsvp">
+                RSVP
+              </a>
             </div>
           </div>
-          <!-- End Burger Menu -->
-          <div id="mobile-nav" class="navbar-menu">
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a class="navbar-item" href="#Waktu">
-                  Waktu
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#lokasi">
-                  Lokasi
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#tentang-dede-ridho">
-                  Tentang Ridho & Dede
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#rsvp">
-                  RSVP
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <!-- End Mobile Nav -->
-        <!-- Begin Hero Content-->
-        <div class="hero-body">
-          <div class="container has-text-centered">
-              <h2 class="subtitle" id="h2-undangan">
-                <span id="tamu-undangan"></span>
-              </h2>
-              <h1 class="subtitle">Undangan Pernikahan</h1>
-              <h1 class="title">Ridho & Dede</h1>
-              <h5 class="subtitle tempatwaktu">
-                Akad Nikah, Rabu 07 Juni 2023
-              </br>
-              Resepsi, Sabtu 10 Juni 2023
+        </div>
+      </nav>
+      <!-- End Mobile Nav -->
+      <!-- Begin Hero Content-->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+            <h2 class="subtitle" id="h2-undangan">
+              <span id="tamu-undangan"></span>
+            </h2>
+            <h1 class="subtitle">Undangan Pernikahan</h1>
+            <h1 class="title">Ridho & Dede</h1>
+            <h5 class="subtitle tempatwaktu">
+              Akad Nikah, Rabu 07 Juni 2023
             </br>
-          </h5>
-        </div>
-        <div data-video="5pZQp22OxvU" data-autoplay="0" data-loop="1" id="youtube-audio1"></div>
-          <!-- Start Countdown -->
-          <div>
-            <ul id="hitungmundur">
-              <li><span class="days" id="days">00</span>
-                <p class="days_text">Hari</p>
-              </li>
-              <li class="separator">:</li>
-              <li><span class="hours" id="hours">00</span>
-                <p class="hours_text">Jam</p>
-              </li>
-              <li class="separator">:</li>
-              <li><span class="minutes" id="minutes">00</span>
-                <p class="minutes_text">Menit</p>
-              </li>
-              <li class="separator">:</li>
-              <li><span class="seconds" id="seconds">00</span>
-                <p class="seconds_text">Detik</p>
-              </li>
-            </ul>
-            <div class="spasi">
-            </div>
-            <script type="text/javascript">
-              var countDownDate = new Date("june 07, 2023 09:00:00").getTime();
-              var x = setInterval(function() {
-                var now = new Date().getTime();                
-                var distance = countDownDate - now;                
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                  
-                document.getElementById("days").innerHTML = days;
-                document.getElementById("hours").innerHTML = hours;
-                document.getElementById("minutes").innerHTML = minutes;
-                document.getElementById("seconds").innerHTML = seconds;           
-
-                if (distance < 0) {
-                  clearInterval(x);
-                  document.getElementById("days").innerHTML = '-';
-                  document.getElementById("hours").innerHTML = '-';
-                  document.getElementById("minutes").innerHTML = '-';
-                  document.getElementById("seconds").innerHTML = '-';   
-                }
-              }, 1000);
-            </script>
+            Resepsi, Sabtu 10 Juni 2023
+          </br>
+        </h5>
+      </div>
+      <div data-video="5pZQp22OxvU" data-autoplay="0" data-loop="1" id="youtube-audio1"></div>
+        <!-- Start Countdown -->
+        <div>
+          <ul id="hitungmundur">
+            <li><span class="days" id="days">00</span>
+              <p class="days_text">Hari</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="hours" id="hours">00</span>
+              <p class="hours_text">Jam</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="minutes" id="minutes">00</span>
+              <p class="minutes_text">Menit</p>
+            </li>
+            <li class="separator">:</li>
+            <li><span class="seconds" id="seconds">00</span>
+              <p class="seconds_text">Detik</p>
+            </li>
+          </ul>
+          <div class="spasi">
           </div>
-          <!-- End Countdown -->
-        </div>
-        <!-- End Hero Content-->
-        <!-- Begin Hero Menu -->
-        <div class="hero-foot">
-          <div class="hero-foot--wrapper">
-            <div class="columns">
-              <div class="column is-12 hero-menu-desktop has-text-centered">
-                <ul>
-                  <li class="is-active">
-                    <a href="#home">Home</a>
-                  </li>
-                  <li>
-                    <a href="#Waktu">Waktu</a>
-                  </li>
-                  <li>
-                    <a href="#lokasi">Lokasi</a>
-                  </li>
-                  <li>
-                    <a href="#tentang-dede-ridho">Tentang Ridho & Dede</a>
-                  </li>
+          <script type="text/javascript">
+            var countDownDate = new Date("june 07, 2023 09:00:00").getTime();
+            var x = setInterval(function() {
+              var now = new Date().getTime();                
+              var distance = countDownDate - now;                
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              document.getElementById("days").innerHTML = days;
+              document.getElementById("hours").innerHTML = hours;
+              document.getElementById("minutes").innerHTML = minutes;
+              document.getElementById("seconds").innerHTML = seconds;           
 
-                  <li>
-                    <a href="#rsvp">RSVP</a>
-                  </li>
-                </ul>
-              </div>
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerHTML = '-';
+                document.getElementById("hours").innerHTML = '-';
+                document.getElementById("minutes").innerHTML = '-';
+                document.getElementById("seconds").innerHTML = '-';   
+              }
+            }, 1000);
+          </script>
+        </div>
+        <!-- End Countdown -->
+      </div>
+      <!-- End Hero Content-->
+      <!-- Begin Hero Menu -->
+      <div class="hero-foot">
+        <div class="hero-foot--wrapper">
+          <div class="columns">
+            <div class="column is-12 hero-menu-desktop has-text-centered">
+              <ul>
+                <li class="is-active">
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#Waktu">Waktu</a>
+                </li>
+                <li>
+                  <a href="#lokasi">Lokasi</a>
+                </li>
+                <li>
+                  <a href="#tentang-dede-ridho">Tentang Ridho & Dede</a>
+                </li>
+
+                <li>
+                  <a href="#rsvp">RSVP</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <!-- End Hero Menu -->
-      </section>
-    </div>
+      </div>
+      <!-- End Hero Menu -->
+    </section>
     <!-- End Hero -->
   </div>
   <!-- End Header -->
