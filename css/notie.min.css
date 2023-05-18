@@ -66,7 +66,7 @@
     width: 100%;
     /* background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png') no-repeat center; */
     background: url('../image/IMG_9789.PNG') no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .notie-textbox-inner {
